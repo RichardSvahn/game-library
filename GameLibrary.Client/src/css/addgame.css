@@ -1,0 +1,14 @@
+.addgame {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  justify-content: center;
+  gap: 0.25em;
+  padding: 0.2em;
+  margin: 0.2em;
+}
+
+.addgame > input {
+  width: 25vw;
+  max-width: 35vw;
+}

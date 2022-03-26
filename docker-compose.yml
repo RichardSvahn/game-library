@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  sql-server-db:
+    container_name: gamelibrary-sql-server
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - '1433:1433'
+    environment:
+      SA_PASSWORD: 'a_very_secure_password_indeed'
+      ACCEPT_EULA: 'Y'

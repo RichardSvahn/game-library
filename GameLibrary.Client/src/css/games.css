@@ -1,0 +1,53 @@
+.games {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 11em 1fr auto;
+  grid-template-columns: 1fr;
+  margin: 0;
+  overflow: auto;
+  text-align: center;
+  justify-content: center;
+  background-color: #bec1c2;
+}
+
+.games > header {
+  padding: 0.3em;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+}
+
+.games > main {
+  overflow: auto;
+  background-color: #a7b6bb;
+}
+
+.games > footer {
+  grid-row: 3/4;
+  border-top: 1px solid black;
+  padding: 0.5em 0;
+}
+
+.gamelist__search {
+  padding: 0.5em;
+  margin: 2em 0;
+  width: 60vw;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 456px) {
+  .gamelist__search {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .gamelist__search {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .gamelist__search {
+    width: 30vw;
+  }
+}
